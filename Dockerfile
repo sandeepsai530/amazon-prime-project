@@ -4,7 +4,7 @@ FROM node:alpine
 #create and set the working directory inside the container
 WORKDIR /app
 
-#copy package.json and package-lock.json to the working directory
+#copy package.json & package-lock.json to the working directory
 COPY package.json package-lock.json ./app/
 
 #install the dependencies
