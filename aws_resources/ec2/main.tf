@@ -55,6 +55,10 @@ resource "aws_instance" "my-ec2" {
       "sudo apt-get update -y",
       "sudo apt-get install trivy -y",
 
+      #NPM Installation
+        "sudo apt install nodejs -y",
+        "sudo apt install npm -y",
+
       # Install Kubectl
       # Ref: https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html#kubectl-install-update
       "curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.30.4/2024-09-11/bin/linux/amd64/kubectl",
